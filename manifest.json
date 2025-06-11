@@ -1,5 +1,5 @@
 {
-  "name": "PWA App",
+  "name": "Daftar Buku App",
   "short_name": "PWA",
   "start_url": "./index.html",
   "display": "standalone",
