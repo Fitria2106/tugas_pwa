@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buku 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Menambahkan file manifest.json -->
+  <link rel="manifest" href="manifest.json" />
+
+</head>
+<body>
+  <div class="container my-5">
+    <a href="index.html" class="btn btn-secondary mb-4">&larr; Kembali</a>
+
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Gambar responsif -->
+        <img src="img/b2.png" alt="buku2" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-8">
+        <h2>BUSINESS</h2>
+        <p><strong>Penulis:</strong> Mrs Abc</p>
+        <p><strong>Deskripsi Lengkap:</strong></p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea id odit nemo nisi commodi illum veritatis molestiae repudiandae fugit. Laborum, asperiores, cumque placeat impedit perferendis expedita pariatur dolorum quod a dolor doloribus, possimus. Voluptatum temporibus facilis, obcaecati molestias ut tenetur rem sit deleniti mollitia laboriosam velit error suscipit nemo perferendis ea voluptas dicta! Enim natus amet, excepturi voluptatem exercitationem harum voluptatibus illum. Molestiae quaerat aliquid odio, eaque doloremque, hic voluptatem error nisi maiores et.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--  Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Daftar Buku Pribadi</p>
+    <p>Made with ❤️ by Rossa</p>
+    <p><a href="mailto:dika@example.com" class="text-white">Hubungi Saya</a></p>
+  </footer>
+  
+  <!-- Bootstrap JS bundle (dropdown/modal) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Registrasi Service Workers di index.html -->
+  <script>
+    // Registrasi service worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js')
+          .then(function (registration) {
+            console.log('ServiceWorker registered: ', registration.scope);
+          }, function (err) {
+            console.log('ServiceWorker failed: ', err);
+          });
+      });
+    }
+  </script>
+
+</body>
+</html>
